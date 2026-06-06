@@ -14,7 +14,7 @@ When you level up, Everything is Crab allows you to pick one of three bonuses. T
 
 Laugh, so that you do not cry. By the time the "boss" arrives to hand over their domain you will already be larger, more imposing. A mess of horns, wings, arms, tentacles,  [cute little cheeks puffed out holding THE CORPSES OF THE DAMNED.](https://everythingiscrab.wiki.gg/wiki/Cheek_Pouch) You are large. Do not dodge. Allow them to hit you so that they might know futility, so they might come to understand your inevitability. You will grant them the absolution you crave and fear. 
 
-You drink the forbidden blood of the dead gods. You eat not only the forbidden fruit, but the snake that brought it. You tear from Yggdrasil, the tree of life, the "branching" evolution that will give testimony to your [alpha](https://everythingiscrab.wiki.gg/wiki/Alpha) status.
+You drink the forbidden blood of the dead gods. You eat not only the forbidden fruit, but the snake that brought it. You tear from Yggdrasil the "branching" evolution that will give testimony to your [alpha](https://everythingiscrab.wiki.gg/wiki/Alpha) status.
 
 You awoke as an alien thing. A soft body with a goofy grin. You were unlike anything else in the natural world. Then you felt fear. You came to understand violence. Now you walk upon this [benighted](https://everythingiscrab.wiki.gg/wiki/Nocturnal) earth, having grown to embody in yourself your greatest fears.
 
@@ -26,7 +26,11 @@ You invest any further progress into great [wings](https://everythingiscrab.wiki
 
 You step over the "final boss" easily. You are disappointed. You have no peers. Finally, you are alone.
 
+![charlie kirk vonnegut. is this anything?](/everything-was-crab.png)
+
 # Verdict
 
-![](/seven-out-of-ten.png)
-*source: https://bubsy3d.com/
+In conclusion, s'aight.
+
+![source: https://bubsy3d.com/](/seven-out-of-ten.png)
+

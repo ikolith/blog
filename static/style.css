@@ -1,32 +1,8 @@
 /* Screen styles */
 body {
-    font-family: Georgia, serif;
-    line-height: 1.6;
     max-width: 8.5in;
     margin: 0 auto;
     padding: 1rem;
-    color: #333;
-}
-
-header {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 2rem;
-    padding-bottom: 0.5rem;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-header h1 a {
-    text-decoration: none;
-    color: #333;
-}
-
-header h1 a:hover {
-    text-decoration: underline;
 }
 
 table {
@@ -36,52 +12,9 @@ table {
     cursor: pointer;
 }
 
-table:hover {
-    background: #f9f9f9;
-}
-
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    color: #333;
-}
-
-.rolled {
-    background: #fffacd !important;
-    font-weight: bold;
-}
-
-/* Print styles */
-@media print {
-    @page {
-        size: A4;
-        margin: 0.5in;
-    }
-    
-    body {
-        max-width: none;
-        margin: 0;
-        padding: 0;
-        font-size: 12pt;
-    }
-    
-    header {
-        display: none;
-    }
-    
-    .rolled {
-        background: none !important;
-        border: 2px solid black;
-    }
-    
-    table {
-        cursor: default;
-        page-break-inside: avoid;
-    }
-}
