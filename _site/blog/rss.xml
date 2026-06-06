@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Blog</title>
+<description>Lorem Ipsum</description>
+<lastBuildDate>{{ date }}</lastBuildDate>
+<item>
+<title>Blog</title>
+<description>Culture Cannibal-Fascism. British imperial communism. Orwellian ikigai. Secular Jihad. Termite culture views concepts like "property" and "personal ambition" with overwhelming disgust and fascination. Individualism is</description>
+<pubDate>2026-06-05</pubDate>
+</item>
+</channel>
+</rss>
