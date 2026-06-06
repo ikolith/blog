@@ -1,6 +1,6 @@
 /* Screen styles */
 body {
-    max-width: 8.5in;
+    max-width: 65ch;
     margin: 0 auto;
     padding: 1rem;
 }
