@@ -139,9 +139,13 @@ def make_pages(src, dst, layout, **params):
             page_params['content'] = rendered_content
             content['content'] = rendered_content
 
+        dst_path = render(dst, **page_params)
+        url = dst_path.removeprefix('_site').removesuffix('index.html')
+        content['url'] = url
+        page_params['url'] = url
+
         items.append(content)
 
-        dst_path = render(dst, **page_params)
         output = render(layout, **page_params)
 
         log('Rendering {} => {} ...', src_path, dst_path)

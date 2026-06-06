@@ -5,20 +5,22 @@ import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 class RebuildHandler(FileSystemEventHandler):
     def on_modified(self, event):
         if not event.is_directory:
             print(f"File changed: {event.src_path}")
             self.rebuild()
-    
+
     def on_created(self, event):
         if not event.is_directory:
             print(f"File created: {event.src_path}")
             self.rebuild()
-    
+
     def rebuild(self):
         try:
-            subprocess.run(["python", "scripts/makesite.py"], check=True)
+            subprocess.run(["python", "scripts/makesite.py"], check=True, cwd=PROJECT_ROOT)
             print("Site rebuilt!")
         except subprocess.CalledProcessError:
             print("Build failed!")
@@ -26,7 +28,7 @@ class RebuildHandler(FileSystemEventHandler):
 def main():
     """Build site, start server, and watch for changes"""
     # Initial build
-    subprocess.run(["python", "scripts/makesite.py"], check=True)
+    subprocess.run(["python", "scripts/makesite.py"], check=True, cwd=PROJECT_ROOT)
     print("Initial build complete!")
     
     # Start file watcher
