@@ -4,7 +4,7 @@ Hey gamers! I haven't been posting much to this blog, so to get back into the sw
 
 Everything is Crab is an educational game built to teach about Nick Land's concept of Gnon, the technocapital singularity, and death.
 
-"Everything is Crab", refers to the natural process of Carcinization, which is a strategy that results in the highest payoff for a biological organism, regardless of their environment or the strategies of competing organisms. This strategy dominates (or "crabs") all other possible strategies.
+The title, "Everything is Crab", refers to the natural process of Carcinization, which is a strategy that results in the highest payoff for a biological organism, regardless of their environment or the strategies of competing organisms. This strategy dominates (or "crabs") all other possible strategies.
 
 When you level up, Everything is Crab allows you to pick one of three bonuses. This is an odd mechanic to use in a rogue-lite, it's much more common in dating sims. Among the bonuses you can pick, there are Social bonuses like ["Tail Wag"](https://everythingiscrab.wiki.gg/wiki/Tail_Wag.). These are included as a joke.
 
