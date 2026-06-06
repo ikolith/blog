@@ -26,11 +26,11 @@ You invest any further progress into great [wings](https://everythingiscrab.wiki
 
 You step over the "final boss" easily. You are disappointed. You have no peers. Finally, you are alone.
 
-![charlie kirk vonnegut. is this anything?](/everything-was-crab.png)
+![charlie kirk vonnegut. is this anything?](../everything-was-crab.png)
 
 # Verdict
 
 In conclusion, s'aight.
 
-![source: https://bubsy3d.com/](/seven-out-of-ten.png)
+![source: https://bubsy3d.com/](../seven-out-of-ten.png)
 
