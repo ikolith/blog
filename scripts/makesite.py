@@ -97,6 +97,12 @@ def read_content(filename):
     # Separate content from headers.
     text = text[end:]
 
+    # Extract title from # header for markdown files if no title is set
+    if filename.endswith(('.md', '.mkd', '.mkdn', '.mdown', '.markdown')) and 'title' not in content:
+        title_match = re.search(r'^#\s+(.+)$', text, re.MULTILINE)
+        if title_match:
+            content['title'] = title_match.group(1).strip()
+
     # Convert Markdown content to HTML.
     if filename.endswith(('.md', '.mkd', '.mkdn', '.mdown', '.markdown')):
         try:
