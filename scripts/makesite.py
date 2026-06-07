@@ -165,7 +165,6 @@ def make_list(posts, dst, list_layout, item_layout, **params):
     items = []
     for post in posts:
         item_params = dict(params, **post)
-        item_params['summary'] = truncate(post['content'])
         item = render(item_layout, **item_params)
         items.append(item)
 
@@ -224,13 +223,13 @@ def main():
 
     # Create blog list pages.
     make_list(blog_posts, '_site/blog/index.html',
-              list_layout, item_layout, blog='blog', title='Blog', **params)
+              list_layout, item_layout, blog='blog', title='ikolith', **params)
     make_list(news_posts, '_site/news/index.html',
               list_layout, item_layout, blog='news', title='News', **params)
 
     # Create RSS feeds.
     make_list(blog_posts, '_site/blog/rss.xml',
-              feed_xml, item_xml, blog='blog', title='Blog', **params)
+              feed_xml, item_xml, blog='blog', title='ikolith', **params)
     make_list(news_posts, '_site/news/rss.xml',
               feed_xml, item_xml, blog='news', title='News', **params)
 

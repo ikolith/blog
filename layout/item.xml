@@ -1,5 +1,5 @@
 <item>
 <title>{{ title }}</title>
-<description>{{ summary }}</description>
+<description>{{ content }}</description>
 <pubDate>{{ date }}</pubDate>
 </item>
