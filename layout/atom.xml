@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>{{ title }}</title>
+<subtitle>{{ subtitle }}</subtitle>
+<link href="{{ site_url }}" />
+<link href="{{ site_url }}{{ base_path }}/blog/atom.xml" rel="self" />
+<id>{{ site_url }}</id>
+<updated>{{ current_date_atom }}</updated>
+{{ content }}
+</feed>

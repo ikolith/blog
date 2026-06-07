@@ -1,5 +1,8 @@
 # Claude Instructions
 
+## Last Known Good Commit
+2f7f6defe84121b731e8193fe190e27c45f42416 - Before RSS/Atom implementation
+
 ## Styling Policy
 - NEVER add CSS styles unless explicitly requested
 - Keep styling extremely minimal - web 1.0 style intentionally

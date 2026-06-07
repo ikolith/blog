@@ -3,7 +3,8 @@
 <channel>
 <title>{{ title }}</title>
 <description>{{ subtitle }}</description>
-<lastBuildDate>{{ date }}</lastBuildDate>
+<link>{{ site_url }}</link>
+<lastBuildDate>{{ current_date }}</lastBuildDate>
 {{ content }}
 </channel>
 </rss>

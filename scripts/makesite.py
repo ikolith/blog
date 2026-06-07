@@ -76,6 +76,12 @@ def rfc_2822_format(date_str):
     return d.strftime('%a, %d %b %Y %H:%M:%S +0000')
 
 
+def atom_format(date_str):
+    """Convert yyyy-mm-dd date string to Atom format date string."""
+    d = datetime.datetime.strptime(date_str, '%Y-%m-%d')
+    return d.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+
 def read_content(filename):
     """Read content and metadata from file into a dictionary."""
     # Read file content.
@@ -114,10 +120,11 @@ def read_content(filename):
         except ImportError as e:
             log('WARNING: Cannot render Markdown in {}: {}', filename, str(e))
 
-    # Update the dictionary with content and RFC 2822 date.
+    # Update the dictionary with content and formatted dates.
     content.update({
         'content': text,
-        'rfc_2822_date': rfc_2822_format(content['date'])
+        'rfc_2822_date': rfc_2822_format(content['date']),
+        'date_atom': atom_format(content['date'])
     })
 
     return content
@@ -188,7 +195,9 @@ def main():
         'subtitle': 'Lorem Ipsum',
         'author': 'Admin',
         'site_url': 'http://localhost:8000',
-        'current_year': datetime.datetime.now().year
+        'current_year': datetime.datetime.now().year,
+        'current_date': datetime.datetime.now().strftime('%a, %d %b %Y %H:%M:%S +0000'),
+        'current_date_atom': datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
     }
 
     # If params.json exists, load it.
@@ -202,6 +211,8 @@ def main():
     item_layout = fread('layout/item.html')
     feed_xml = fread('layout/feed.xml')
     item_xml = fread('layout/item.xml')
+    atom_xml = fread('layout/atom.xml')
+    entry_xml = fread('layout/entry.xml')
 
     # Combine layouts to form final layouts.
     post_layout = render(page_layout, content=post_layout)
@@ -232,6 +243,12 @@ def main():
               feed_xml, item_xml, blog='blog', title='ikolith', **params)
     make_list(news_posts, '_site/news/rss.xml',
               feed_xml, item_xml, blog='news', title='News', **params)
+
+    # Create Atom feeds.
+    make_list(blog_posts, '_site/blog/atom.xml',
+              atom_xml, entry_xml, blog='blog', title='ikolith', **params)
+    make_list(news_posts, '_site/news/atom.xml',
+              atom_xml, entry_xml, blog='news', title='News', **params)
 
 
 # Test parameter to be set temporarily by unit tests.

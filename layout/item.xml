@@ -1,5 +1,7 @@
 <item>
 <title>{{ title }}</title>
-<description>{{ content }}</description>
-<pubDate>{{ date }}</pubDate>
+<description><![CDATA[{{ content }}]]></description>
+<link>{{ site_url }}{{ url }}</link>
+<guid>{{ site_url }}{{ url }}</guid>
+<pubDate>{{ rfc_2822_date }}</pubDate>
 </item>

@@ -1,0 +1,7 @@
+<entry>
+<title>{{ title }}</title>
+<link href="{{ site_url }}{{ url }}" />
+<id>{{ site_url }}{{ url }}</id>
+<updated>{{ date_atom }}</updated>
+<content type="html"><![CDATA[{{ content }}]]></content>
+</entry>
